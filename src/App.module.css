@@ -1,0 +1,9 @@
+.grid{
+    position: relative;
+    top:100px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    background-color: red;
+    height: calc(100vh - 100px);
+    gap: 10rem;
+}
