@@ -1,4 +1,5 @@
 import { Header } from './components/Header/Header'
+import { SideBar } from './components/SideBar/SideBar'
 
 import styles from './App.module.css'
 
@@ -9,7 +10,10 @@ function App() {
       <>
         <Header/>
 
-        <div className={styles.grid}></div>
+        <div className={styles.wrapper}>
+          <SideBar/>
+          <main>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</main>
+        </div>
       </>
     )
 }
