@@ -1,45 +1,75 @@
-.aside{
-
+.sidebar{
+    overflow: hidden;
     border-radius: 8px;
-
     background: var(--gray-800);
 }
 
-.aside header{
-    position: relative;
-    height: 4.5rem;
-    background: url("./../../assets/bgAside.svg") no-repeat;
-    border-radius: 8px 8px 0 0;
+.cover{
+    width: 100%;
+    height: 72px;
+    object-fit: cover;
 }
 
-.perfil{
-    width: 50px;
-    height: 50px;
-
-    position: absolute;
-    top: 45px;
-    left: 103px;
-
-    border-collapse: collapse;
-    border: 5px solid var(--green-500);
-    border-radius: 8px;
-    
-}
-
-.aside main{
-    height: 116px;
-
+.profile{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    margin-top: calc(0px - 1.5rem - 6px);
 }
 
-.aside footer{
-    height: 106px;
+.profile strong{
+    margin-top: 1rem;
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.profile span{
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+.avatar {
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-900);
+    outline: 2px solid var(--green-500);
+}
+
+.sidebar footer{
+    border-top: 1px solid var(--gray-600);
+    padding: 1.5rem 2rem 2rem;
+    margin-top: 1.5rem;
+}
+
+.sidebar footer a{
+    height: 50px;
+    background: transparent;
+
+    color: var(--green-500);
+    font-weight: bold;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.5rem;
+
+    padding: 0 1.5rem;
+
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+
+    gap: 0.5rem;
+
+    transition: all 0.2s;
+}
+
+.sidebar footer a:hover{
+    color: var(--white);
+    background: var(--green-500);
 }
